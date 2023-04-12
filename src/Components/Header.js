@@ -62,6 +62,7 @@ const NavMenu=styled.div`
     flex:1;
     margin-left: 25px;
     align-items:center;
+    overflow:hidden;
 
       a{
         display:flex;
