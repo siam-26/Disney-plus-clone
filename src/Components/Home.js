@@ -24,7 +24,7 @@ const Container=styled.main`
 
      &:before{
         background:url("/images/home-background.png") center center / cover no-repeat fixed;
-        content:"fdgdg";
+        content:"";
         position:absolute;
         top:0;
         left:0;
