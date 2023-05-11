@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
 import Viewers from './Viewers';
@@ -22,6 +22,13 @@ const Container=styled.main`
      padding: 0 calc(3.5vw + 5px);
      position:reletive;
      overflow:hidden;
+    // min-height:calc(100vh - 250px);
+    // position:relative;
+    // top:72px;
+    // display:block;
+    // overflow-x:hidden;
+    // padding:0 calc(3.5vw + 5px);
+
 
      &:before{
         background:url("/images/home-background.png") center center / cover no-repeat fixed;
