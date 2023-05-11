@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
 import Viewers from './Viewers';
 import Movies from './Movies';
+import Disney from './Disney';
+import Originals from './Originals';
+import Trending from './Trending';
 
 const Home = () => {
     
@@ -11,6 +14,9 @@ const Home = () => {
             <ImgSlider/>
             <Viewers/>
             <Movies/>
+            <Disney/>
+            <Originals/>
+            <Trending/>
         </Container>
     );
 };

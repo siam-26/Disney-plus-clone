@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Movies = (props) => {
+const Disney = () => {
     return (
         <Container>
-            <h4>Recommended for you</h4>
+            <h4>New to Disney+</h4>
 
             <Content>
                 <Wrap>
@@ -50,7 +50,7 @@ const Movies = (props) => {
     );
 };
 
-export default Movies;
+export default Disney;
 
 const Container=styled.div`
 
