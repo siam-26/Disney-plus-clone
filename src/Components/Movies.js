@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Movies = () => {
+const Movies = (props) => {
     return (
         <Container>
             <h4>Recommended for you</h4>

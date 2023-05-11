@@ -1,16 +1,34 @@
 import React from 'react';
 import './App.css';
+import{
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import Header from './Components/Header';
+import Details from './Components/Details';
 import Home from './Components/Home';
-import { RouterProvider } from 'react-router-dom';
-import router from './Routes/Routes';
+import Login from './Components/Login';
 
 function App() {
   return (
     <div className="App">
-      {/* <Header />
-      <Home /> */}
-      <RouterProvider router={router}></RouterProvider>
+      <Router>
+        <Header/>
+        <Switch>
+          <Route path="/details" >
+            <Details/>
+          </Route>
+          <Route path="/login">
+            <Login/>
+          </Route>
+          <Route path="/">
+            <Home/>
+          </Route>
+          
+        </Switch>
+      </Router>
     </div>
   );
 }
