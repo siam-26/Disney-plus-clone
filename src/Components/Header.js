@@ -183,7 +183,7 @@ const UserImg = styled.img`
 
 const DropDown = styled.div`
    position:absolute;
-   top:48px;
+   top:8px;
    right:0px;
    background:rgb(19,19,19);
    border:1px solid rgba(151,151,151,0.34);
