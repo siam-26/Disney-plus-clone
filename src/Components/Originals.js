@@ -1,50 +1,27 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { selectOriginals } from '../features/movies/movieSlice';
 
 const Originals = () => {
+    const originals = useSelector(selectOriginals);
+
     return (
         <Container>
             <h4>Originals</h4>
 
             <Content>
-                <Wrap>
-                    <Link to="/">
-                       <img src='https://i.ytimg.com/vi/7rspQR7rhf0/maxresdefault.jpg'/>
-                    </Link>
-                </Wrap>
-
-                <Wrap>
-                    <Link to='/'> 
-                       <img src='https://pixarpost.com/wp-content/uploads/2020/10/1f02d-watch-pixar-bao-online-for-free.jpg'/> 
-                    </Link>
-                </Wrap>
-
-                <Wrap>
-                    <Link to='/'>
-                       <img src='https://m.media-amazon.com/images/M/MV5BN2IxMmUwN2ItZjBlYy00OGZmLThlYjktN2JjOWFhM2EyMjBkXkEyXkFqcGdeQXVyODUxNjI1MzQ@._V1_.jpg'/>
-                    </Link>
-                </Wrap>
-
-                <Wrap>
-                    <img src='https://media.gq.com/photos/5c1e63340a6d90408dff16a5/master/w_1366,h_768,c_limit/Screenshot%202018-12-22%20at%2011.15.19%20AM.png'/>
-                </Wrap>
-
-                <Wrap>
-                    <img src='https://hips.hearstapps.com/digitalspyuk.cdnds.net/18/25/1529337756-bao1.jpg'/>
-                </Wrap>
-
-                <Wrap>
-                    <img src='https://s1.dmcdn.net/v/SwTTq1XIH_Bj48cmU/x720'/>
-                </Wrap>
-
-                <Wrap>
-                    <img src='https://media.blogto.com/articles/20190122-bao2.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70'/>
-                </Wrap>
-
-                <Wrap>
-                    <img src='https://www.gamespot.com/a/uploads/original/171/1712892/3404259-3.png'/>
-                </Wrap>
+                {
+                    originals &&
+                    originals.map((original,key)=>(
+                        <Wrap key={key}>
+                           <Link to={"/details/"+original.id}>
+                              <img src={original.cardImg} alt={original.title}/>
+                           </Link>
+                        </Wrap>
+                    ))
+                }
             </Content>
         </Container>
     );
