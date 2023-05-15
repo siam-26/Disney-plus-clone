@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import { auth,provider } from '../firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { selectUserName, selectUserPhoto, setSignOutState, setUserLoginDetails } from '../features/user/userSlice';
+import { selectUserEmail, selectUserName, selectUserPhoto, setSignOutState, setUserLoginDetails } from '../features/user/userSlice';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     const dispatch = useDispatch();
     const history = useHistory();
     const userName = useSelector(selectUserName);
+    const userEmail = useSelector(selectUserEmail);
     const userPhoto = useSelector(selectUserPhoto);
 
     useEffect(()=>{
@@ -19,10 +20,10 @@ const Header = () => {
                 history.push('/');
             }
         })
-    },[userName]);
+    },[userEmail]);
 
     const handleAuth=()=>{
-        if(!userName){
+        if(!userEmail){
             auth.signInWithPopup(provider)
         .then(result=>{
             setUser(result.user);
@@ -31,7 +32,7 @@ const Header = () => {
             console.log(error);
         })
         }
-        else if(userName){
+        else if(userEmail){
             auth.signOut().then(result=>{
                 dispatch(setSignOutState())
                 history.push('/login');
@@ -56,7 +57,7 @@ const Header = () => {
                 </Link>
 
                 {
-                    !userName?                   
+                    !userEmail?                   
                         <Login onClick={handleAuth}>LOGIN</Login>
                     :
                 <>
