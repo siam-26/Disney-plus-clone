@@ -10,6 +10,7 @@ import Header from './Components/Header';
 import Details from './Components/Details';
 import Home from './Components/Home';
 import Login from './Components/Login';
+import PrivateRoute from './Components/PrivateRoute';
 
 function App() {
   return (
@@ -17,15 +18,20 @@ function App() {
       <Router>
         <Header/>
         <Switch>
-          <Route path="/details" >
-            <Details/>
-          </Route>
+          
+             <PrivateRoute path="/details/:id" >
+               <Details/>
+             </PrivateRoute>
+          
           <Route path="/login">
             <Login/>
           </Route>
-          <Route path="/">
-            <Home/>
-          </Route>
+
+          
+              <PrivateRoute path="/">
+                 <Home/>
+              </PrivateRoute>
+          
           
         </Switch>
       </Router>

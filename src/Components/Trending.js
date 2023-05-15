@@ -8,7 +8,7 @@ const Trending = () => {
     const trendings = useSelector(selectTrending);
 
     return (
-        <Container>
+        <Container id='trending'>
             <h4>Trendings</h4>
 
             <Content>
@@ -30,7 +30,8 @@ const Trending = () => {
 export default Trending;
 
 const Container=styled.div`
-
+   margin-top:90px;
+   margin-bottom:20px;
 `
 
 const Content=styled.div`

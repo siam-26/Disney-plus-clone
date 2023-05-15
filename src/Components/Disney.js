@@ -8,7 +8,7 @@ const Disney = () => {
     const disney = useSelector(selectDisney);
 
     return (
-        <Container>
+        <Container id='new'>
             <h4>New to Disney+</h4>
 
             <Content>
@@ -30,7 +30,7 @@ const Disney = () => {
 export default Disney;
 
 const Container=styled.div`
-
+   margin-top:90px;
 `
 
 const Content=styled.div`

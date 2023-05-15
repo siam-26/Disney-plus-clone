@@ -4,6 +4,7 @@ import { auth,provider } from '../firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { selectUserName, selectUserPhoto, setSignOutState, setUserLoginDetails } from '../features/user/userSlice';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const dispatch = useDispatch();
@@ -50,7 +51,9 @@ const Header = () => {
     
     return (
             <Nav>
-                <Logo src='/images/logo.svg'/>
+                <Link to='/'>
+                    <Logo src='/images/logo.svg'/>
+                </Link>
 
                 {
                     !userName?                   
@@ -58,35 +61,31 @@ const Header = () => {
                     :
                 <>
                    <NavMenu>
-                    <a>
+                    <Link to='/'>
                         <img src='/images/home-icon.svg'/>
                         <span>Home</span>
-                    </a>
+                    </Link>
 
-                    <a>
-                        <img src='/images/search-icon.svg'/>
-                        <span>Search</span>
-                    </a>
-
-                    <a>
+                    <a href='#recommended'>
                         <img src='/images/watchlist-icon.svg'/>
-                        <span>WatchList</span>
+                        <span>Recommended</span>
                     </a>
 
-                    <a>
+                    <a href='#new'>
+                        <img src='/images/original-icon.svg'/>
+                        <span>New</span>
+                    </a>
+
+                    <a href='#originals'>
                         <img src='/images/original-icon.svg'/>
                         <span>Originals</span>
                     </a>
 
-                    <a>
+                    <a href='#trending'>
                         <img src='/images/movie-icon.svg'/>
-                        <span>Movies</span>
+                        <span>Trending</span>
                     </a>
 
-                    <a>
-                        <img src='/images/series-icon.svg'/>
-                        <span>Series</span>
-                    </a>
                 </NavMenu>
 
                 <SignOut>

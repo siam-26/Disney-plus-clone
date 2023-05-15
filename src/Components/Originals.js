@@ -8,7 +8,7 @@ const Originals = () => {
     const originals = useSelector(selectOriginals);
 
     return (
-        <Container>
+        <Container id='originals'>
             <h4>Originals</h4>
 
             <Content>
@@ -30,7 +30,7 @@ const Originals = () => {
 export default Originals;
 
 const Container=styled.div`
-
+    margin-top:90px;
 `
 
 const Content=styled.div`

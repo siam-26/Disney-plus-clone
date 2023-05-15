@@ -8,7 +8,7 @@ const Movies = (props) => {
     const movies = useSelector(selectRecommendMovies);
     
     return (
-        <Container>
+        <Container id='recommended'>
             <h4>Recommended for you</h4>
 
             <Content>
@@ -30,7 +30,7 @@ const Movies = (props) => {
 export default Movies;
 
 const Container=styled.div`
-
+    margin-top:90px;
 `
 
 const Content=styled.div`
