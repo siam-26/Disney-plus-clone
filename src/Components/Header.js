@@ -66,25 +66,25 @@ const Header = () => {
                         <span>Home</span>
                     </Link>
 
-                    <a href='#recommended'>
+                    <Link to='/'>
                         <img src='/images/watchlist-icon.svg'/>
                         <span>Recommended</span>
-                    </a>
+                    </Link>
 
-                    <a href='#new'>
+                    <Link to='/'>
                         <img src='/images/original-icon.svg'/>
                         <span>New</span>
-                    </a>
+                    </Link>
 
-                    <a href='#originals'>
+                    <Link to='/'>
                         <img src='/images/original-icon.svg'/>
                         <span>Originals</span>
-                    </a>
+                    </Link>
 
-                    <a href='#trending'>
+                    <Link to='/'>
                         <img src='/images/movie-icon.svg'/>
                         <span>Trending</span>
-                    </a>
+                    </Link>
 
                 </NavMenu>
 
@@ -111,10 +111,16 @@ const Nav=styled.nav`
        align-items:center;
        padding:0 36px;
        overflow:hidden;
+
+       @media (max-width:768px){
+        padding:0 36px;
+    }
 `
 
 const Logo=styled.img`
         height:60px;
+
+        
 `
 
 const NavMenu=styled.div`
@@ -130,14 +136,26 @@ const NavMenu=styled.div`
         padding:0px 12px;
         cursor:pointer;
 
+        @media (max-width:768px){
+            display:none;
+        }
+
         img{
             height:20px;
+
+            @media (max-width:768px){
+                display:none;
+            }
         }
 
         span{
             font-size: 13px;
             letter-spacing: 1.42px;
             position:relative;
+
+            @media (max-width:768px){
+                font-size:10px;
+            }
             
             &:after{
                 content:"";
@@ -178,6 +196,7 @@ const Login=styled.a`
 
 const UserImg = styled.img`
    height:100%;
+}
 `
 
 const DropDown = styled.div`
@@ -208,6 +227,8 @@ const SignOut = styled.div`
       border-radius:50%;
       width:100%;
       height:100%;
+
+      
    }
       &:hover{
          ${DropDown} {
