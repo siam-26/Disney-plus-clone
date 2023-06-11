@@ -48,8 +48,8 @@ To learn React, check out the [React documentation](https://reactjs.org/). -->
 Disney-Plus-Clone
 
 ## Live Site
-Link: https://disney-plus-clone-fd976.web.app/
-Code: https://github.com/siam-26/Disney-plus-clone
+Link: <a href="https://disney-plus-clone-fd976.web.app/">Disney-Plus-Clone</a> <br>
+Code: <a href="https://github.com/siam-26/Disney-plus-clone">GitHub</a>
 
 ## Features
 • On this site, I use Firebase authentication and use the private route.<br>
