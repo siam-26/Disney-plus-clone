@@ -52,12 +52,12 @@ Link: https://disney-plus-clone-fd976.web.app/
 Code: https://github.com/siam-26/Disney-plus-clone
 
 ## Features
-• On this site, I use Firebase authentication and use the private route.
-• I opted to utilize the Firebase database in this project.
+• On this site, I use Firebase authentication and use the private route.<br>
+• I opted to utilize the Firebase database in this project.<br>
 • Elevated user experience through engaging hover-triggered background videos in a section on the homepage.
 
 ## Technology
-• React Js
-• Redux
-• Styled Components
+• React Js<br>
+• Redux<br>
+• Styled Components<br>
 • Firebase
