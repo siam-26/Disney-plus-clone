@@ -53,9 +53,9 @@ Code: <a href="https://github.com/siam-26/Disney-plus-clone">GitHub</a>
 
 ## Features
 • Firebase Authentication: Implemented secure user authentication using Firebase, enabling users to sign up, log in, and
-access personalized content.
+access personalized content. <br>
 • Engaging Background Videos: Improved user engagement by incorporating hover-triggered background videos in a
-featured section on the homepage.
+featured section on the homepage. <br>
 • Responsive Design: Created a mobile-friendly interface to ensure optimal user experience across various devices and screen
 sizes.
 
