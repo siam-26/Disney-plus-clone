@@ -49,7 +49,7 @@ Disney-Plus-Clone
 
 ## Live Site
 Link: <a href="https://disney-plus-clone-fd976.web.app/">Disney-Plus-Clone</a> <br>
-Code: <a href="https://github.com/siam-26/Disney-plus-clone">GitHub</a>
+Code: <a href="https://github.com/siam-26/Disney-plus-clone">https://github.com/siam-26/Disney-plus-clone</a>
 
 ## Features
 • Firebase Authentication: Implemented secure user authentication using Firebase, enabling users to sign up, log in, and
