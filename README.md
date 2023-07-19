@@ -52,9 +52,12 @@ Link: <a href="https://disney-plus-clone-fd976.web.app/">Disney-Plus-Clone</a> <
 Code: <a href="https://github.com/siam-26/Disney-plus-clone">GitHub</a>
 
 ## Features
-• On this site, I use Firebase authentication and use the private route.<br>
-• I opted to utilize the Firebase database in this project.<br>
-• Elevated user experience through engaging hover-triggered background videos in a section on the homepage.
+• Firebase Authentication: Implemented secure user authentication using Firebase, enabling users to sign up, log in, and
+access personalized content.
+• Engaging Background Videos: Improved user engagement by incorporating hover-triggered background videos in a
+featured section on the homepage.
+• Responsive Design: Created a mobile-friendly interface to ensure optimal user experience across various devices and screen
+sizes.
 
 ## Technology
 • React Js<br>
